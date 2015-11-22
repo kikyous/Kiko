@@ -14,7 +14,7 @@ gems:
   - jemoji
 
 # Markdown
-markdown: kramdown
+markdown: KramdownPygments
 
 kramdown:
   input: GFM

@@ -10,8 +10,18 @@ baseurl:            ""
 #baseurl:            "" #For Root Domain
 permalink:          /:year/:month/:day/:title.html
 
+gems:
+  - jemoji
+
 # Markdown
-markdown:           redcarpet
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  toc_levels:     1..6
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    line_numbers: false
 
 # Navigation
 nav:

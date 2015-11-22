@@ -5,11 +5,16 @@ layout: default
   <h1 class="masthead-title--small">
     <a href="{{ site.baseurl }}/">{{ site.name }}</a>
   </h1>
-</header>      
+</header>
 <div class="content post">
   <h1 class="post-title">{{ page.title }}</h1>
   <div class="post-date">
-    <time>{{ page.date | date_to_string }}</time>
+    <time class='icon-clock'>{{ page.date | date_to_string }}</time> |
+    {% for tag in page.tags %}
+    <a href="/tag#{{ tag | slugify }}">
+      <span class="icon-tags tag-mark">{{ tag }}</span>
+    </a>
+    {% endfor %}
   </div>
   {{ content }}
 </div>

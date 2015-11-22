@@ -1,9 +1,10 @@
 ---
 title: Find max subarray
+tags: [Alogorithms, Ruby]
 ---
 
 <p class="lead">
-算法导论，查找最大子数组ruby实现。
+算法导论，查找最大子数组, 分治策略ruby实现。
 </p>
 
 ```ruby

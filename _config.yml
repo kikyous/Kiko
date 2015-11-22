@@ -16,10 +16,6 @@ gems:
 # Markdown
 markdown: redcarpet
 
-kramdown:
-  input: GFM
-  syntax_highlighter: pygments
-
 # Navigation
 nav:
   - name:           "About"

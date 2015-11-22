@@ -17,9 +17,9 @@ so,来推荐vim插件吧:smile:
 
 * 单行的ruby表达式转换成多行(gS)
 
-  ``` ruby
-  puts "foo" if bar?
-  ```
+``` ruby
+puts "foo" if bar?
+```
 
 ``` ruby
 if bar?

@@ -12,6 +12,7 @@ permalink:          /:year/:month/:day/:title.html
 
 gems:
   - jemoji
+  - jekyll-sitemap
 
 # Markdown
 markdown: redcarpet

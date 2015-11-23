@@ -48,7 +48,7 @@ end
 
 > 轻量级的Vim Plugin Manager，能并行更新插件,速度很快
 
-  ![](https://raw.githubusercontent.com/junegunn/i/master/vim-plug/installer.gif)
+  ![](/assets/posts/2015-11-22-awesome-vim-plugins/installer.gif)
 
 ## ctrl-p
 
@@ -56,7 +56,7 @@ end
 
 > 最离不开的插件，fuzzy-find, buffer-list
 
-  ![](https://camo.githubusercontent.com/0a0b4c0d24a44d381cbad420ecb285abc2aaa4cb/687474703a2f2f692e696d6775722e636f6d2f7949796e722e706e67)
+  ![](/assets/posts/2015-11-22-awesome-vim-plugins/687474703a2f2f692e696d6775722e636f6d2f7949796e722e706e67)
 
 ## indentLine
 
@@ -64,7 +64,7 @@ end
 
 > 有个indentline看起来好多了
 
-  ![](/assets/images/indentline.png)
+  ![](/assets/posts/2015-11-22-awesome-vim-plugins/indentline.png)
 
 
 
@@ -92,6 +92,6 @@ end
 
 > 轻量级的powerline，很漂亮
 
-  ![](https://github.com/bling/vim-airline/wiki/screenshots/demo.gif)
+  ![](/assets/posts/2015-11-22-awesome-vim-plugins/demo.gif)
 
-  ![](https://f.cloud.github.com/assets/306502/962204/cfc1210a-04eb-11e3-8a93-42e6bcd21efa.png)
+  ![](/assets/posts/2015-11-22-awesome-vim-plugins/cfc1210a-04eb-11e3-8a93-42e6bcd21efa.png)

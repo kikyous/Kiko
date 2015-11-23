@@ -46,7 +46,7 @@ end
 
   <https://github.com/junegunn/vim-plug>
 
-  > 轻量级的Vim Plugin Manager，能并行更新插件,速度很快
+> 轻量级的Vim Plugin Manager，能并行更新插件,速度很快
 
   ![](https://raw.githubusercontent.com/junegunn/i/master/vim-plug/installer.gif)
 
@@ -54,7 +54,7 @@ end
 
   <https://github.com/kien/ctrlp.vim>
 
-  > 最离不开的插件，fuzzy-find, buffer-list
+> 最离不开的插件，fuzzy-find, buffer-list
 
   ![](https://camo.githubusercontent.com/0a0b4c0d24a44d381cbad420ecb285abc2aaa4cb/687474703a2f2f692e696d6775722e636f6d2f7949796e722e706e67)
 
@@ -62,9 +62,10 @@ end
 
   <https://github.com/Yggdroot/indentLine>
 
-  > 有个indentline看起来好多了
+> 有个indentline看起来好多了
 
   ![](/assets/images/indentline.png)
+
 
 
 ## vim-easy-align
@@ -74,6 +75,7 @@ end
 > 强迫症必备
 
   ![Alt text here](https://raw.githubusercontent.com/junegunn/i/master/easy-align/equals.gif)
+
 
 
 ## tcomment_vim

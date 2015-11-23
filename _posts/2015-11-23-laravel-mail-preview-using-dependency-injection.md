@@ -9,6 +9,7 @@ laravel中需要发送邮件，邮件的样式调试每次都要重新发送邮�
 
 ## 如何预览邮件
 ```php
+<?php
 class NewUserRegisted implements ShouldQueue
 {
     private $mailer;
@@ -33,6 +34,7 @@ class NewUserRegisted implements ShouldQueue
 我们可以创建一个简单的控制器:
 
 ```php
+<?php
 class MailPreviewController extends Controller
 {
     public function show(Request $request)
@@ -53,6 +55,7 @@ class MailPreviewController extends Controller
 可以看到`NewUserRegisted`初始化的时候需要一个Mailer, Mailer实例的send方法负责发送邮件，那我们可不可以让send来进行模版渲染然后返回请求给浏览器呢？
 
 ```php
+<?php
 namespace App;
 class MailPreview implements \Illuminate\Contracts\Mail\Mailer
 {
@@ -69,6 +72,7 @@ class MailPreview implements \Illuminate\Contracts\Mail\Mailer
 所以我们的控制器就变成这样了
 
 ```php
+<?php
 use App\MailPreview;
 class MailPreviewController extends Controller
 {
@@ -81,6 +85,8 @@ class MailPreviewController extends Controller
 }
 ```
 我们利用`NewUserRegisted@handle`来提供模版需要的所有数据，而不是重新实现一次他的逻辑。
+
+*注意 `NewUserRegisted@handle` 中的`return`。*
 
 ## 依赖注入(dependency injection)
 

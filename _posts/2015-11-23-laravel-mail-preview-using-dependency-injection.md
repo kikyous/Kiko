@@ -21,9 +21,9 @@ class NewUserRegisted implements ShouldQueue
 
     public function handle(User $user)
     {
-        $params1 = 'some var';
-        $params2 = 'some var 2';
-        return $this->mailer->send('emails.user_registed', compact('user', 'params1', 'params2'), function ($m) use ($user) {
+        $param1 = 'some var';
+        $param2 = 'some var 2';
+        return $this->mailer->send('emails.user_registed', compact('user', 'param1', 'param2'), function ($m) use ($user) {
             $m->to($user->email)->bcc('member@buyextracts.com')->subject('Welcome to register [www.buyextracts.com]');
         });
     }
@@ -39,12 +39,12 @@ class MailPreviewController extends Controller
 {
     public function show(Request $request)
     {
-        $params1 = 'some var';
-        $params2 = 'some var 2';
+        $param1 = 'some var';
+        $param2 = 'some var 2';
         $user = User::first();
 
         $handle = $request->get('handle');
-        return view('emails.user_registed', compact('user', 'params1', 'params2'));
+        return view('emails.user_registed', compact('user', 'param1', 'param2'));
     }
 }
 ```
@@ -59,12 +59,10 @@ class MailPreviewController extends Controller
 namespace App;
 class MailPreview implements \Illuminate\Contracts\Mail\Mailer
 {
-    public $view;
     public function raw($text, $callback){}
     public function failures(){}
     public function send($view, array $data, $callback)
     {
-        $this->$view = $view;
         return view($view, $data);
     }
 }

@@ -7,13 +7,14 @@ tags: [OAuth]
 一直对oauth授权机制很模糊，最近工作中需要使用linkedin api，就仔细学习了一下。
 代码使用oauth2 gem。
 </p>
+<https://github.com/intridea/oauth2>
 
-## 创建app
+## 配置application
 
 <https://www.linkedin.com/developer/apps/new>
 
 获得`client_id`, `client_secret`
-这里还需要`redirect_uri`, 需要设置。
+这里还有`redirect_uri`需要设置。
 
 ## 获取Authorization Code
 

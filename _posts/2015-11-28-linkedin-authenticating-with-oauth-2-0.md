@@ -9,7 +9,7 @@ tags: [OAuth]
 </p>
 <https://github.com/intridea/oauth2>
 
-## 配置application
+## 配置Application
 
 <https://www.linkedin.com/developer/apps/new>
 
@@ -25,7 +25,6 @@ client = OAuth2::Client.new('client_id', 'client_secret', site: 'https://example
 client.auth_code.authorize_url(redirect_uri: 'http://localhost/oauth2/callback')
 # https://www.linkedin.com/uas/oauth2/authorization?client_id=74x467dun7ceu7&redirect_uri=http%3A%2F%2Flocalhost%2Foauth2%2Fcallback&response_type=code&state=12345
 ```
-
 
 url中包含下面几个参数
 
@@ -48,7 +47,6 @@ state: state，检查和上面指定值是否一致，用来防范CSRF攻击。
 ```
 
 ## 交换Authorization Code 得到 Request Token
-
 
 - `POST` https://www.linkedin.com/uas/oauth2/accessToken
 

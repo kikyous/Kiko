@@ -3,7 +3,7 @@ title: ! '[转] Rails 预加载(preload)的3种方式'
 tags: [Rails]
 ---
 
-![](http://blog.arkency.com/assets/images/preloading/header-fit.png)
+![](/assets/posts/2015-12-02-rails-preloading/header-fit.png)
 <p class="lead">
 和Rails的ActiveRecord打交道，你大概已经习惯用#includes来预加载数据。但你知道为啥它生成的SQL有时小而美，有时却是个巨型查询，且每个表、列都被重命名过（"users"."id" AS t0_r0，"addresses"."id" AS t1_r0）？你知道#preload和#eager_load 也能帮你做这事儿吗？你知道Rails4中预加载方面有哪些变化吗？如果都不知道的话，请耐心读下去。本文不会太长，将助你了解预加载中哪些你不熟悉的方面。
 </p>

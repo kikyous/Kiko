@@ -37,7 +37,7 @@ state: 12345
 
 在浏览器中打开上面的url
 
-![](https://content.linkedin.com/content/dam/developer/global/en_US/site/img/authorization_dialog.jpg)
+![](/assets/posts/2015-11-28-linkedin-authenticating-with-oauth-2-0/authorization_dialog.jpg)
 
 授权之后会跳转到redirect_uri, 并且包含下面两个参数
 

@@ -79,7 +79,7 @@ User.eager_load(:addresses).where("addresses.country = ?", "Poland")
 # WHERE (addresses.country = 'Poland')
 ```
 
-本例中Rails发现where语句用到了预加载表（addresses）中的列（country），故而将#includes代理给了#eager_load。你也可直接调用#eager_load,来到稳定实现这个效果。
+本例中Rails发现where语句用到了预加载表（addresses）中的列（country），故而将#includes代理给了#eager_load。你也可直接调用#eager_load 来稳定实现这个效果。
 
 如果显示调用#preload会怎样呢？
 

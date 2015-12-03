@@ -62,9 +62,9 @@ User.eager_load(:addresses)
 #  LEFT OUTER JOIN "addresses" ON "addresses"."user_id" = "users"."id"
 ```
 
-　　结果完全不一样，对吧。问题的关键在于Rails有两种方式进行数据预加载：一种通过单独的（separate）查询去加载其他表的数据；另一种只用单个查询(带left join)一次性加载所有数据。
+结果完全不一样，对吧。问题的关键在于Rails有两种方式进行数据预加载：一种通过单独的（separate）查询去加载其他表的数据；另一种只用单个查询(带left join)一次性加载所有数据。
 
-　　用#preload，就意味着你希望总是用单独的（separate）查询；用#eager_load，表明你用的是单个查询（一次性加载所有数据）。那么#includes呢？它会帮你选择从上面选择一种方式，即你把决定权交给了Rails。那么它是根据什么决定的呢？你可能会问，是基于查询条件(query conditions)。我们先来看这样一个例子：#includes把查询代理给了#eager_load，所以只会有一个巨型查询产生。
+用#preload，就意味着你希望总是用单独的（separate）查询；用#eager_load，表明你用的是单个查询（一次性加载所有数据）。那么#includes呢？它会帮你选择从上面选择一种方式，即你把决定权交给了Rails。那么它是根据什么决定的呢？你可能会问，是基于查询条件(query conditions)。我们先来看这样一个例子：#includes把查询代理给了#eager_load，所以只会有一个巨型查询产生。
 
 ```ruby
 # 这两个用法是等效的
@@ -79,9 +79,9 @@ User.eager_load(:addresses).where("addresses.country = ?", "Poland")
 # WHERE (addresses.country = 'Poland')
 ```
 
-　　本例中Rails发现where语句用到了预加载表（addresses）中的列（country），故而将#includes代理给了#eager_load。你也可直接调用#eager_load,来到稳定实现这个效果。
+本例中Rails发现where语句用到了预加载表（addresses）中的列（country），故而将#includes代理给了#eager_load。你也可直接调用#eager_load,来到稳定实现这个效果。
 
-　　如果显示调用#preload会怎样呢？
+如果显示调用#preload会怎样呢？
 
 ```ruby
 User.preload(:addresses).where("addresses.country = ?", "Poland")
@@ -90,7 +90,7 @@ User.preload(:addresses).where("addresses.country = ?", "Poland")
 #  SQLite3::SQLException: no such column: addresses.country
 ```
 
-　　由于没将users表和addresses表关联（join）起来，故而抛出了异常。
+由于没将users表和addresses表关联（join）起来，故而抛出了异常。
 
 ### 目标实现了吗
 

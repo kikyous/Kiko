@@ -1,6 +1,6 @@
 ---
 title: Laravel mail preview using dependency injection
-tags: [php, laravel, mail preview]
+tags: [php, laravel]
 ---
 
 <p class="lead">

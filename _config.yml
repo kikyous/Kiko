@@ -17,6 +17,9 @@ gems:
 # Markdown
 markdown: kramdown
 
+kramdown:
+  input: GFM
+
 # Navigation
 nav:
   - name:           "About"

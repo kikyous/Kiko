@@ -1,5 +1,5 @@
 ---
-title: 3ds 新绘心教室的作品
+title: 3ds 新绘心教室成果
 tags: [3ds art]
 ---
 
@@ -23,6 +23,7 @@ tags: [3ds art]
 ## 第四课 哈密瓜
 
 ![](/assets/posts/2016-4-11-3ds-new-art-academy/5324d03e7d7efcf5cc553f936577fd5d.png)
+
 盘子都画不圆
 
 ## 第五课 风车

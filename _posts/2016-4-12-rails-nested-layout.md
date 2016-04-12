@@ -79,7 +79,22 @@ end
 <% parent_layout "application" %>
 ```
 
-直接在子模板中指定父模板,完美的继承关系。
+直接在子模板中指定父模板，完美的继承关系，而且可以进行多次，比如
+
+* `layouts/profile.html.erb`
+
+```erb
+<div class="profile">
+  <%= render 'profile_nav' %>
+  <%= yield %>
+</div>
+
+<% parent_layout "main" %>
+```
+
+最后这3个layout的关系如下：
+
+`application < main < profile`
 
 # Reference
 <http://m.onkey.org/nested-layouts>

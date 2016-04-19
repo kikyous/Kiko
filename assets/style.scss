@@ -14,13 +14,13 @@ body {
 }
 
 html {
-  font-family: sans-serif;
-  font-size: 18px;
+  font-family: Lato, "Microsoft Jhenghei", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 16px;
   font-weight: 300;
-  line-height: 1.6;
+  line-height: 1.7;
 
   @media (min-width: 38em) {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -39,30 +39,66 @@ a {
     text-decoration: underline;
   }
 }
-
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: .5rem;
-  font-weight: 600;
-  line-height: 1.1;
-  color: #333;
-  letter-spacing: -.025rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  margin: 20px 0 10px;
+  font-weight: bold;
+  line-height: 1;
+  font-family: Cambria, Georgia, "Microsoft Jhenghei", "Hiragino Sans GB", "Microsoft YaHei", "Times New Roman", serif;
 }
-
 h1 {
-  font-size: 2rem;
+  font-size: 24px;
 }
-
+@media (max-width: 767px) {
+  h1 {
+    font-size: 20px;
+  }
+}
 h2 {
-  font-size: 1.6rem;
+  font-size: 22px;
 }
-
+@media (max-width: 767px) {
+  h2 {
+    font-size: 18px;
+  }
+}
 h3 {
-  font-size: 1.3rem;
+  font-size: 20px;
 }
-
-h4, h5, h6 {
-  font-size: 1rem;
+@media (max-width: 767px) {
+  h3 {
+    font-size: 16px;
+  }
+}
+h4 {
+  font-size: 18px;
+}
+@media (max-width: 767px) {
+  h4 {
+    font-size: 14px;
+  }
+}
+h5 {
+  font-size: 16px;
+}
+@media (max-width: 767px) {
+  h5 {
+    font-size: 12px;
+  }
+}
+h6 {
+  font-size: 14px;
+}
+@media (max-width: 767px) {
+  h6 {
+    font-size: 10px;
+  }
 }
 
 p {
@@ -161,7 +197,7 @@ blockquote {
 
 code,
 pre {
-  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-family: "PT Mono", Consolas, Monaco, Menlo, monospace;
 }
 
 code {
@@ -256,7 +292,7 @@ tbody tr:nth-child(odd) th {
 }
 
 .container {
-  max-width: 40rem;
+  max-width: 45rem;
   padding: 2rem 1.5rem;
   margin-left:  auto;
   margin-right: auto;
@@ -335,6 +371,7 @@ tbody tr:nth-child(odd) th {
 .post {
   &-title {
     margin-bottom: .25rem;
+    font-size: 28px
   }
   &-date {
     margin-bottom: 2rem;

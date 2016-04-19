@@ -3,6 +3,9 @@ title: Rails nested layout
 tags: [rails]
 ---
 
+* TOC
+{:toc}
+
 # 问题
 
 * 某rails项目 `layouts/application.html.erb`
@@ -98,3 +101,4 @@ end
 
 # Reference
 <http://m.onkey.org/nested-layouts>
+

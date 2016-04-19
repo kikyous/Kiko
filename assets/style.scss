@@ -119,13 +119,9 @@ dd {
 }
 
 ul {
-  list-style: inside;
-  padding-left: 0;
-  
   li {
     margin-bottom: .25rem;
   }
-  
   ul,
   ol {
     margin-top: .25rem;
@@ -134,13 +130,10 @@ ul {
 }
 
 ol {
-  list-style: inside decimal;
   padding-left: 0;
-  
   li {
     margin-bottom: .25rem;
   }
-  
   ul,
   ol {
     margin-top: .25rem;
@@ -305,41 +298,32 @@ tbody tr:nth-child(odd) th {
 
   &-title {
     font-weight: 300;
-    
     a {
       color: #333;
-      
       &:hover,
       &:focus {
         text-decoration: none;
       }
     }
-    
     span {
       color: #ddd;
     }
-    
   }
-  
   &-title--small {
     margin-bottom: .75rem;
     font-size: .75rem;
     font-weight: 600;
     text-transform: uppercase;
-    
     a {
       color: #333;
-      
       &:hover,
       &:focus {
         text-decoration: none;
       }
     }
   }
-  
   .masthead-nav {
     margin-bottom: 2rem;
-    
     a {
       color: #aaa;
       font-weight: 300;

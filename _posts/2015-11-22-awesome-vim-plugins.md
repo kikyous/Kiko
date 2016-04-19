@@ -3,6 +3,9 @@ title: Awesome vim plugins
 tags: [Vim]
 ---
 
+* TOC
+{:toc}
+
 偶然看了一下邮箱里面的第一封邮件，是一个自解压的vim压缩包，日期是2011年5月28日，思绪一下飘到了大学时代。。。
 
 四年过去了。。。:sob:

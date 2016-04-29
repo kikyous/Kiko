@@ -94,17 +94,13 @@ irb(main):007:0> Fabricate(:stock)
 ## 更复杂的
 
 ```ruby
-Fabricator(:company) do
-  name { SecureRandom.hex(5) }
-  contacts { SecureRandom.hex(3) }
-  phone '1111111'
-
+Fabricate(:company) do
   staffs(count: 2){ Fabricate(:staff){ role: :admin } }
   stocks(count: 3){ |attrs, i| Fabricate(:stock){ remark: "stock#{i}" } }
 end
 ```
 
-上面的Fabricator会生成了一个完备的公司，包括`1+2+2+3+3=11`条记录：
+这样会生成一个完备的公司，包括`1+2+2+3+3=11`条记录：
 
   - 1个company
   - 2个staff，与每个staff关联的user

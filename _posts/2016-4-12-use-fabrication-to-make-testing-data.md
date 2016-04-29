@@ -59,6 +59,8 @@ irb(main):012:0> Fabricate(:company)
 => #<Company id: 980193688, name: "d153c213e4", contacts: "995add", phone: "1111111", created_at: "2016-04-29 01:40:26", updated_at: "2016-04-29 01:40:26">
 ```
 
+这很简单，不值得一提对吧！
+
 ## 关联关系
 
 ```ruby
@@ -102,8 +104,9 @@ Fabricator(:company) do
 end
 ```
 
-上面的Fabricator会生成了一个完备的公司，包括：
+上面的Fabricator会生成了一个完备的公司，包括`1+2+2+3+3=11`条记录：
 
+  - 1个company
   - 2个staff，与每个staff关联的user
   - 3个stock, 与每个stock关联的product
 
@@ -118,7 +121,7 @@ Fabricator(:complete_company, from: :company) do
 end
 ```
 
-然后就可以使用`Fabricate(:complete_company)`来生成一个和上面一样的公司了。
+现在可以使用`Fabricate(:complete_company)`来生成一个和上面一样的公司了!
 
 # READ MORE
 

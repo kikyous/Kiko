@@ -13,18 +13,18 @@ rails默认用fixture创建测试数据，但是fixture直接操作数据库，�
 
 # 数据模型
 ```ruby
-class Company
+class Company < ApplicationRecord
   has_many :stocks
   has_many :staffs
   has_many :users, through: :staffs
 end
 ```
 ```ruby
-class User
+class User < ApplicationRecord
 end
 ```
 ```ruby
-class Product
+class Product < ApplicationRecord
   belongs_to :stock
 end
 ```

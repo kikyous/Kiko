@@ -64,16 +64,15 @@ irb(main):012:0> Fabricate(:company)
 ## 关联关系
 
 ```ruby
-# 定义 stock Fabricator
-Fabricator(:stock) do
-  product
-  company
+Fabricator(:product) do
+  name { SecureRandom.hex(5) }
 end
 ```
 
 ```ruby
-Fabricator(:staff) do
-  user
+# 定义 stock Fabricator
+Fabricator(:stock) do
+  product
   company
 end
 ```
@@ -92,6 +91,13 @@ irb(main):007:0> Fabricate(:stock)
 可以看到`Fabricate(:stock)`不仅生成了Stock记录，还生成了与其关联的Product和Company。
 
 ## 更复杂的
+
+```ruby
+Fabricator(:staff) do
+  user
+  company
+end
+```
 
 ```ruby
 Fabricate(:company) do
@@ -118,6 +124,12 @@ end
 ```
 
 现在可以使用`Fabricate(:complete_company)`来生成一个和上面一样的公司了!
+
+## 生成多个对象
+
+```ruby
+Fabricate.times(10, :complete_company)
+```
 
 # READ MORE
 

@@ -1,5 +1,5 @@
 ---
-title: 使用fabrication准备测试用数据
+title: 使用fabrication生成测试用数据
 tags: [rails, testing]
 ---
 
@@ -101,7 +101,7 @@ end
 
 ```ruby
 Fabricate(:company) do
-  staffs(count: 2){ Fabricate(:staff){ role: :admin } }
+  staffs(count: 2, fabricator: :staff)
   stocks(count: 3){ |attrs, i| Fabricate(:stock){ remark: "stock#{i}" } }
 end
 ```
@@ -118,7 +118,7 @@ end
 
 ```ruby
 Fabricator(:complete_company, from: :company) do
-  staffs(count: 2){ Fabricate(:staff){ role: :admin } }
+  staffs(count: 2, fabricator: :staff)
   stocks(count: 3){ |attrs, i| Fabricate(:stock){ remark: "stock#{i}" } }
 end
 ```

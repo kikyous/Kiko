@@ -28,7 +28,9 @@ end
 
 后来经过重构，使用aasm来管理这些状态。
 
-# 引入AASM管理状态
+<https://github.com/aasm/aasm>
+
+# 使用AASM管理状态
 
 ## 公司(Company)
 
@@ -106,7 +108,4 @@ end
   * `up`事件在公司的up事件里被调用，若此时公司已激活，则库存状态从`paid`转变为`active`，否则什么都不发生
   * `down`事件在公司的down事件里被调用，若此时公司未激活，库存状态从`active`转变为`paid`，否则什么都不发生
 
-经过这样的重构后整个流程变得清晰明了，我们的目的达到了:smile:
-
-# Reference
-<https://github.com/aasm/aasm>
+经过这样的重构后整个流程变得清晰明了，只需要在适当的地方调用定义好的事件就可以了，我们的目的达到了:smile:

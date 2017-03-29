@@ -37,7 +37,7 @@ permalink: /resume/
 * [https://ruby-china.org/kikyous](https://ruby-china.org/kikyous)
 * [http://btsync.space(业余时间做的资源共享网站, docker部署于amazon ec2)](http://btsync.space)
 
-## 台词
+## 想说的话
 
 > 热爱开源，喜欢折腾，上大学时痴迷于 linux，python，曾经在 nokia 5320的小屏幕上用数字键盘搞pys60，还加入了当时的乐讯手机开发团队O(∩_∩)O~
 >

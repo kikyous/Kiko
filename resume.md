@@ -6,8 +6,8 @@ permalink: /resume/
 ## 基础属性
 
 * 陈云杰
-* 1992/03，25岁，男，汉族, 未婚
-* 甘肃天水人士
+* 1992/03，25岁，男，汉族，未婚
+* 甘肃天水人士（现居西安）
 
 ## 属性加成
 
@@ -25,6 +25,11 @@ permalink: /resume/
 * docker
 * 主力开发工具 vim，大学开始接触，用了5、6年了
 
+## 召唤方式
+
+* 17602942362
+* 11352355@qq.com
+
 ## 这些网站你看吗
 
 * [http://kikyo.us(个人博客，没怎么更新)](http://kikyo.us)
@@ -32,7 +37,7 @@ permalink: /resume/
 * [https://ruby-china.org/kikyous](https://ruby-china.org/kikyous)
 * [http://btsync.space(业余时间做的资源共享网站, docker部署于amazon ec2)](http://btsync.space)
 
-## 想说的话
+## 台词
 
 > 热爱开源，喜欢折腾，上大学时痴迷于 linux，python，曾经在 nokia 5320的小屏幕上用数字键盘搞pys60，还加入了当时的乐讯手机开发团队O(∩_∩)O~
 >
